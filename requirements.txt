@@ -1,4 +1,11 @@
-pyudev==0.24.0
+# Core dependencies
 cryptography==41.0.7
 python-dotenv==1.0.0
-pyusb==1.2.1 
+pyusb==1.2.1
+pyinstaller==6.3.0
+customtkinter==5.2.2
+pillow==10.2.0
+
+# Platform-specific dependencies
+pywin32==306; platform_system == "Windows"
+pyudev==0.24.0; platform_system == "Linux" 

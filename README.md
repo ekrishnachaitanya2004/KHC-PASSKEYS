@@ -9,11 +9,13 @@ A secure USB-based authentication system that transforms a standard USB drive in
 - Automatic access control
 - Real-time USB removal detection
 - Encrypted authentication
+- Modern GUI interface
+- Windows executable support
 
 ## Requirements
 
 - Python 3.8+
-- Linux/Unix system (for USB monitoring)
+- Windows/Linux/Unix system
 - Required Python packages (see requirements.txt)
 
 ## Installation
@@ -23,19 +25,26 @@ A secure USB-based authentication system that transforms a standard USB drive in
    ```bash
    pip install -r requirements.txt
    ```
-3. Run the setup script to initialize your USB key:
-   ```bash
-   python setup_usb.py
-   ```
 
 ## Usage
 
-1. Run the authentication service:
+### Running from Source
+1. Run the setup script to initialize your USB key:
+   ```bash
+   python setup_usb.py
+   ```
+2. Start the authentication service:
    ```bash
    python usb_auth_service.py
    ```
-2. Insert your registered USB drive to authenticate
-3. Remove the USB drive to lock the system
+
+### Windows Executable
+1. Build the executable:
+   ```bash
+   python build.py
+   ```
+2. Find the executable in the `dist` directory
+3. Run `USB_Auth_System.exe`
 
 ## Security Notes
 
